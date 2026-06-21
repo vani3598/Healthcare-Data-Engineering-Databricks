@@ -1,0 +1,10 @@
+Data Sources
+
+The project demonstrates ingestion from multiple enterprise-style source systems:
+
+- CSV files representing hospital exports
+- Azure SQL Database representing transactional healthcare systems
+- REST API providing laboratory results in JSON format
+- Reference lookup files for business enrichment
+
+These heterogeneous data sources are orchestrated using Azure Data Factory and landed into Azure Data Lake Storage Gen2 before transformation in Azure Databricks.
