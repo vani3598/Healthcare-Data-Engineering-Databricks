@@ -45,3 +45,12 @@ The dataset is ingested using Azure Data Factory into Azure Data Lake Storage Ge
 7. Load curated data into Azure SQL Database.
 8. Build reporting dashboards in Power BI.
 
+## Dataset Profile
+
+- Records: 55,500
+- Columns: 15
+- Format: CSV
+- Domain: Healthcare
+- Source: Public synthetic healthcare dataset
+
+The dataset contains patient demographics, hospital admissions, medical conditions, insurance information, medications, billing amounts, and laboratory outcomes. It is processed using Azure Databricks and PySpark following a Medallion Architecture.
