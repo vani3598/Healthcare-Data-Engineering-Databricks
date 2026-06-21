@@ -18,11 +18,30 @@ Healthcare CSV Source Files → Azure Data Factory → ADLS Bronze → Azure Dat
 
 ## Key Features
 
-- ADF orchestration
-- Databricks notebook development
+- Azure Data Factory orchestration
+- Azure Data Lake Storage Gen2 (Bronze, Silver, Gold)
+- Azure Databricks notebooks
 - PySpark transformations
-- Delta table creation
-- Bronze, Silver, Gold architecture
+- Delta Lake implementation
 - Data quality validation
-- Azure SQL reporting layer
-- Power BI dashboard preparation
+- Azure SQL Database integration
+- Power BI reporting
+- Medallion Architecture
+
+## Dataset
+
+This project uses a publicly available synthetic healthcare dataset obtained from Kaggle for educational and portfolio purposes.
+
+The dataset is ingested using Azure Data Factory into Azure Data Lake Storage Gen2 and processed in Azure Databricks using PySpark and Delta Lake before being loaded into Azure SQL Database for reporting and analytics.
+
+## Project Workflow
+
+1. Download healthcare dataset from Kaggle.
+2. Ingest raw CSV into Azure Data Lake Storage Gen2 using Azure Data Factory.
+3. Store raw data in the Bronze layer.
+4. Clean and transform the data using Azure Databricks and PySpark.
+5. Store validated data in Silver Delta tables.
+6. Create Gold business-ready datasets.
+7. Load curated data into Azure SQL Database.
+8. Build reporting dashboards in Power BI.
+
