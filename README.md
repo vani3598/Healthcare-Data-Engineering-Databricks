@@ -54,3 +54,13 @@ The dataset is ingested using Azure Data Factory into Azure Data Lake Storage Ge
 - Source: Public synthetic healthcare dataset
 
 The dataset contains patient demographics, hospital admissions, medical conditions, insurance information, medications, billing amounts, and laboratory outcomes. It is processed using Azure Databricks and PySpark following a Medallion Architecture.
+
+## Storage Architecture
+
+The project follows the Medallion Architecture pattern:
+
+- **Bronze Layer** – Stores raw healthcare data exactly as received.
+- **Silver Layer** – Stores cleaned and validated Delta tables after PySpark transformations.
+- **Gold Layer** – Stores business-ready datasets used for reporting and analytics.
+
+Azure Data Lake Storage Gen2 is used as the central storage platform for all three layers.
