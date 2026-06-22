@@ -64,3 +64,17 @@ The project follows the Medallion Architecture pattern:
 - **Gold Layer** – Stores business-ready datasets used for reporting and analytics.
 
 Azure Data Lake Storage Gen2 is used as the central storage platform for all three layers.
+
+## Azure Data Factory
+
+Azure Data Factory is used to orchestrate data ingestion into the Bronze layer of Azure Data Lake Storage Gen2.
+
+### Pipeline Components
+
+- Linked Service: `ls_adls_healthcare`
+- Source Dataset: `ds_healthcare_csv`
+- Sink Dataset: `ds_bronze_output`
+- Pipeline: `pl_ingest_healthcare_csv`
+- Activity: `copy_healthcare_to_bronze`
+
+The pipeline can be extended with triggers, parameterization, and metadata-driven orchestration for enterprise-scale implementations.
