@@ -78,3 +78,15 @@ Azure Data Factory is used to orchestrate data ingestion into the Bronze layer o
 - Activity: `copy_healthcare_to_bronze`
 
 The pipeline can be extended with triggers, parameterization, and metadata-driven orchestration for enterprise-scale implementations.
+
+## Azure Databricks Environment
+
+Workspace: adb-de-healthcare-dev
+
+Cluster Configuration:
+- Runtime: Databricks Runtime LTS
+- Access Mode: Single User
+- Workers: 1
+- Auto Termination: 15 Minutes
+
+Azure Databricks is used to perform PySpark transformations and create Delta Lake tables following Medallion Architecture principles.
